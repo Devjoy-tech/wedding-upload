@@ -98,7 +98,7 @@ a{
     #uploadButton{
         width: 50%;
         padding: 16px;
-        border-radius: 10px;
+        border-radius: 16px;
         font-weight: bold;
         border: 0;
         font-size: 10px;
@@ -118,6 +118,5 @@ a{
     }
     a{
         color: #000;
-        font-sze: 16px;
     }
 }
