@@ -24,7 +24,7 @@ h1{
     color:#000;
 }
 
-button{
+/*button{
     position: relative;
     top: 80%;
     width: 10%;
@@ -33,7 +33,7 @@ button{
     border: 0;
     left: 45%;
     font-weight: bold;
-}
+}*/
 
 @media (max-width: 1024px){
     body{
@@ -45,7 +45,7 @@ button{
         height: 100vh;
         position: relative;
     }
-    button{
+   /* button{
         position: relative;
         top: 80%;
         left: 8.5em;
@@ -56,4 +56,4 @@ button{
         border: 0;
         font-weight: bold;
     }
-}
+}*/
