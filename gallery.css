@@ -47,7 +47,7 @@ button{
     }
     button{
         position: relative;
-        top: 80%;
+        bottom: 10%;
         left: 8.5em;
         margin: 0;
         width: 50%;
