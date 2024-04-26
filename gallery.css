@@ -34,7 +34,13 @@ h1{
     left: 45%;
     font-weight: bold;
 }*/
-
+  .grid-container{
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px 200px;
+        background-color: red;
+        gap: 20px;
+      
 @media (max-width: 1024px){
     body{
         width: 100%;
@@ -57,9 +63,4 @@ h1{
         font-weight: bold;
     }
 }*/
-    .grid-container{
-        display: grid;
-        grid-template-columns: 200px 200px 200px 200px 200px;
-        grid-template-rows: 200px 200px 200px 200px 200px;
-        background-color: red;
-        gap: 20px;
+  
