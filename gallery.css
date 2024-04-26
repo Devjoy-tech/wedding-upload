@@ -40,7 +40,10 @@ h1{
         grid-template-rows: 200px 200px 200px 200px 200px;
         background-color: red;
         gap: 20px;
-      
+  }
+
+
+
 @media (max-width: 1024px){
     body{
         width: 100%;
