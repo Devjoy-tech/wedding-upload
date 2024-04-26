@@ -1,0 +1,121 @@
+/* Styles for layout, background image, overlay, and modal */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+/* Add your styles here */
+body{
+    width: 100%;
+    background-image: url(images/2151200349.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000; 
+    height: 100vh;
+}
+
+.container{
+    width: 50%;
+   display: flex;
+   justify-content: center;
+   height: 500px;
+   margin: 3% auto;
+   background-color: rgba(255, 255, 255, 0.6);
+   border-radius: 20px;
+}
+.content{
+    padding: 3em 3em;
+}
+
+h1{
+    margin-top: 3em;
+    text-align: center;
+}
+
+.btn{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.bttn{
+    width: 30%;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 0;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+}
+
+#uploadButton{
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 0;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+@media (max-width: 1024px){
+    body{
+        margin: 0;
+        background-image: url(images/black-white-kissing-portrait-couple.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;  
+        height: 100vh;
+    }
+    .container{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       height: 400px;
+       margin-top: 13em;
+       background-color: rgba(255, 255, 255, 0.8);
+       color: #000;
+       border-radius: 0;
+    }
+    h1{
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .btn{
+        display: flex;
+        margin-top: 5rem;
+        text-align: center;
+    }
+    #uploadButton{
+        width: 50%;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: 0;
+        font-size: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+    }
+    .bttn{
+        width: 50%;
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: 0;
+        font-size: 16px;
+        background-color: rgba(255, 255, 255, 0.8);
+        
+    }
+    a{
+        color: #000;
+    }
+}

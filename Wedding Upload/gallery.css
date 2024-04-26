@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+body{
+    width: 100%;
+    background-image: url(images/2151200349.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; 
+    height: 100vh;
+    position: absolute;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    top: 1em;
+    background-color: #000;
+    background-color: rgba(255, 255, 255, 0.4);
+    color:#000;
+}
+
+button{
+    position: relative;
+    top: 80%;
+    width: 10%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    left: 45%;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px){
+    body{
+        width: 100%;
+        background-image: url(images/black-white-kissing-portrait.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff; 
+        height: 100vh;
+        position: relative;
+    }
+    button{
+        position: relative;
+        top: 80%;
+        left: 8.5em;
+        margin: 0;
+        width: 50%;
+        padding: 10px;
+        border-radius: 20px;
+        border: 0;
+        font-weight: bold;
+    }
+}

@@ -43,20 +43,19 @@ document.addEventListener("DOMContentLoaded", function() {
     function uploadImage(file) {
         // Add logic to upload the image to the server
         // You can use AJAX, Fetch API, or a form submission
-        // Example:
-        // var formData = new FormData();
-        // formData.append("image", file);
-        // fetch("upload.php", {
-        //     method: "POST",
-        //     body: formData
-        // })
-        // .then(response => response.json())
-        // .then(data => {
-        //     alert("Image uploaded successfully!");
-        //     modal.style.display = "none";
-        // })
-        // .catch(error => {
-        //     console.error("Error uploading image:", error);
-        // });
+        var formData = new FormData();
+            formData.append("image", file);
+            fetch("upload.php",{
+                method: "POST",
+                body: formData
+            })
+            .then(response =>response.json())
+            .then(data => {
+                alert("image uploaded successfully!");
+                modal.style.dsplay = "none";
+            })
+            .catch(error => {
+                console.error("Error uploading image:", error)
+            })
     }
 });
