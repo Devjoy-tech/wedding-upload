@@ -37,12 +37,12 @@ h1{
 
 
 .grid-container{
-        display: grid;
-        grid-template-columns: 200px 200px 200px 200px 200px;
-        grid-template-rows: 200px 200px 200px 200px 200px;
-        background-color: blue;
-        gap: 20px;
-       justify-content: center;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    background-color: blue;
+    gap: 20px;
+    justify-content: center;
   }
 
 .grid-items{
