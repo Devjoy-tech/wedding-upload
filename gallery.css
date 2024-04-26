@@ -34,7 +34,9 @@ h1{
     left: 45%;
     font-weight: bold;
 }*/
-  .grid-container{
+
+
+.grid-container{
         display: grid;
         grid-template-columns: 200px 200px 200px 200px 200px;
         grid-template-rows: 200px 200px 200px 200px 200px;
@@ -51,7 +53,11 @@ h1{
     background-color: red;
 }
 
-.grid.items
+.grid.items:nth-of-type(1){
+    grid-column: 1;
+    grid-row: 1;
+    background-imaage: url(images/);
+}
 
 
 @media (max-width: 1024px){
