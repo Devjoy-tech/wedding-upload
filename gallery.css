@@ -35,32 +35,6 @@ h1{
     font-weight: bold;
 }*/
 
-
-.grid-container{
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px 200px 200px;
-    background-color: blue;
-    gap: 20px;
-    justify-content: center;
-  }
-
-.grid-items{
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-.grid.items:hover{
-    background-color: red;
-}
-
-.grid.items:nth-of-type(1){
-    grid-column: 1;
-    grid-row: 1;
-    background-imaage: url(images/black-white-kissing-portrait-couple.jpg);
-}
-
-
 @media (max-width: 1024px){
     body{
         width: 100%;
