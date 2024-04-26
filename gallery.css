@@ -42,6 +42,7 @@ h1{
         grid-template-rows: 200px 200px 200px 200px 200px;
         background-color: red;
         gap: 20px;
+        margin: auto;
   }
 
 .grid-items{
