@@ -42,6 +42,16 @@ h1{
         gap: 20px;
   }
 
+.grid-items{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.grid.items:hover{
+    background-color: red;
+}
+
+.grid.items
 
 
 @media (max-width: 1024px){
