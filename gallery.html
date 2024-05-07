@@ -11,7 +11,7 @@
     <h1>Image Gallery</h1>
     <div id="gallery"></div>
     <!----<button id="loadMore">Load More</button>--->
-    <div class="grid-container">
+    <div class="grid-container" id="grid-container">
         <div class="grid-items"></div>
         <div class="grid-items"></div>
         <div class="grid-items"></div>
@@ -39,5 +39,13 @@
         <div class="grid-items"></div>
     </div>
     <script src="gallery.js"></script>
+    <script>
+        function onWindowLoad() {
+            fetchPhotoList();
+        }
+    
+        window.onload = onWindowLoad;
+    </script>
+    
 </body>
 </html>

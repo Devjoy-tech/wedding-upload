@@ -23,7 +23,6 @@ function uploadImage() {
         // });
 
     .then(response => {
-        // Check if response is OK (status 200-299)
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -33,13 +32,21 @@ function uploadImage() {
     .then(data => {
         // Data is the parsed JSON object
         console.log(data);
-        // You can further process the data here
+        // alert(data);
+        if(data === 'The file has been uploaded.'){
+            window.location.reload();
+        } else{
+            const erroMsg = document.getElementById('upload_message')
+            erroMsg.innerHTML = data.error;
+        }
     })
     .catch(error => {
         console.error('Fetch error:', error);
+        alert(error);
         // Handle errors here
     });
     } else {
         console.error('No file selected');
+        alert('No file selected');
     }
 }

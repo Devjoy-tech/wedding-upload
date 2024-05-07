@@ -1,29 +1,31 @@
-// JavaScript for displaying the image gallery
+function fetchPhotoList() {
+    fetch('photos.php')
+    .then(response => {
+        return response.json()
+    })
+    .then(data => {
+        console.log(data)
+        if (data.length > 0) {
+            const gridContainer = document.getElementById('grid-container');
+            gridContainer.innerHTML = '';
+            data.forEach(photo => {
+                console.log(photo);
+                const img = document.createElement('img');
+                img.src = 'uploads/' + photo.name;
+                img.alt = photo.name;
 
-document.addEventListener("DOMContentLoaded", function() {
-    var gallery = document.getElementById("gallery");
-    var loadMoreBtn = document.getElementById("loadMore");
-
-    loadImages();
-
-    function loadImages() {
-        // Add logic to fetch images from the server
-        // Example:
-        // fetch("get_images.php")
-        // .then(response => response.json())
-        // .then(data => {
-        //     data.forEach(image => {
-        //         var imgElement = document.createElement("img");
-        //         imgElement.src = image.url;
-        //         gallery.appendChild(imgElement);
-        //     });
-        // })
-        // .catch(error => {
-        //     console.error("Error loading images:", error);
-        // });
-    }
-
-    loadMoreBtn.addEventListener("click", function() {
-        // Add logic to load more images
+                const gridItem = document.createElement('div');
+                gridItem.classList.add('grid-items');
+                gridItem.appendChild(img);
+                gridContainer.appendChild(gridItem);
+            });
+        } else {
+            console.error('Error: Invalid response from server');
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching photo list:', error);
     });
-});
+}
+
+window.onload = fetchPhotoList;
